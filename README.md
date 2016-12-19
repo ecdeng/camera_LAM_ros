@@ -20,4 +20,8 @@ The third (and final) demo would be more of an experiment to explore the fidelit
 
 TO-DO: 
 1. Look over http://www.uco.es/investiga/grupos/ava/node/57 and see if you can get their system to work as a quick demo. Looks pretty straightforward and their known bugs shouldn't really effect our project. 
-2. 
+2. Their project is different in that they are building maps using these fiducials but we want to work back using a built map to localize ourselves. This is a nice solving problem for you to play with (a bit easier than most if not all 6-dof IK solvers so it would be a nice segway into that next thing). :) So using the map that you've already built trhough running the demo try to see if they have functionality (or build it yourself) for localizing the camera. 
+3. Merging the camera localization with ROS--see if you can visualize this system in ROS/RViz. This can/should be done in two steps--first connect their stable ARUCO build with ROS and then your camera localization bit.
+4. OpenFace Integration with (ROS + ARUCO). Reading in the vectors from OpenFace and using those to draw project rays from the eyes to table. 
+5. Build towards demo(s) listed above.
+n. We want to minimize the number of fiducials we would be using so ideally we can just use two markers with known location on the plane (relative size and distances from each other and other defining features (edges of table). Building a system like this would be the last thing and a nice thing to have but in no way is it required for now so just ignore this. 
