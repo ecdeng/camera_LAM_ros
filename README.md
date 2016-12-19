@@ -9,6 +9,7 @@ Using fiducial markers in a 3D space we hope to build a system that can return t
 The initial drive to pursuing this project is for work being done in the @interaction-lab and projecting gaze behavior from a human subject using OpenFace. Because the cameras in the deployment setup had the possibility of being moved there was a significant change of incorrect data from projecting gaze. The hope is that after giving the cameras the ability to localize in space, systems in the future can automatically account for movement and therefore decrease error in the data.
 
 @Vadim 
+
 The end goal of this system is to be able to use head poze (and/or gaze behaviors) to see where a person is looking. We know what the desktop setup looks like (i.e. the location and angle of the screen, position of the robot, location of the parent, etc.) and if we have the location and position of the camera in space we can transform gaze/head into a vector and determine where they are looking (error would stem COMPLETELY from OpenFace so we actually don't need to make this a distribution).
 
 The first demo to run is have different areas on a flat surface (table) marked off and track gaze behavior/head pose using 2 cameras (one looking down from overhead and one from the tablet plane) and 1) Appropriately choose which camera to use (compare projected error--relatively straightforward) 2)Output which areas are being looked at at any one time.
