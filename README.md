@@ -19,6 +19,7 @@ The second demo to run is actually having the setup and determining which object
 The third (and final) demo would be more of an experiment to explore the fidelity of this system and see if it would be possible to use the tablet webcam to actually determine where on the screen the child is looking or use the top webcam to determine whether or not the child is looking at the robot in the face.
 
 TO-DO: 
+
 1. Look over http://www.uco.es/investiga/grupos/ava/node/57 and see if you can get their system to work as a quick demo. Looks pretty straightforward and their known bugs shouldn't really effect our project. 
 2. Their project is different in that they are building maps using these fiducials but we want to work back using a built map to localize ourselves. This is a nice solving problem for you to play with (a bit easier than most if not all 6-dof IK solvers so it would be a nice segway into that next thing). :) So using the map that you've already built trhough running the demo try to see if they have functionality (or build it yourself) for localizing the camera. 
 3. Merging the camera localization with ROS--see if you can visualize this system in ROS/RViz. This can/should be done in two steps--first connect their stable ARUCO build with ROS and then your camera localization bit.
