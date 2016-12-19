@@ -8,4 +8,15 @@ Using fiducial markers in a 3D space we hope to build a system that can return t
 
 The initial drive to pursuing this project is for work being done in the @interaction-lab and projecting gaze behavior from a human subject using OpenFace. Because the cameras in the deployment setup had the possibility of being moved there was a significant change of incorrect data from projecting gaze. The hope is that after giving the cameras the ability to localize in space, systems in the future can automatically account for movement and therefore decrease error in the data.
 
+@Vadim 
+The end goal of this system is to be able to use head poze (and/or gaze behaviors) to see where a person is looking. We know what the desktop setup looks like (i.e. the location and angle of the screen, position of the robot, location of the parent, etc.) and if we have the location and position of the camera in space we can transform gaze/head into a vector and determine where they are looking (error would stem COMPLETELY from OpenFace so we actually don't need to make this a distribution).
+
+The first demo to run is have different areas on a flat surface (table) marked off and track gaze behavior/head pose using 2 cameras (one looking down from overhead and one from the tablet plane) and 1) Appropriately choose which camera to use (compare projected error--relatively straightforward) 2)Output which areas are being looked at at any one time.
+
+The second demo to run is actually having the setup and determining which objects someone is looking at (Robot, Screen, Parent, or Nothing).
+
+The third (and final) demo would be more of an experiment to explore the fidelity of this system and see if it would be possible to use the tablet webcam to actually determine where on the screen the child is looking or use the top webcam to determine whether or not the child is looking at the robot in the face.
+
 TO-DO: 
+1. Look over http://www.uco.es/investiga/grupos/ava/node/57 and see if you can get their system to work as a quick demo. Looks pretty straightforward and their known bugs shouldn't really effect our project. 
+2. 
