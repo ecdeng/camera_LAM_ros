@@ -1,4 +1,5 @@
 camera_LAM_ros
+
 Tranformation of 6-DOF RGB camera position in 3-dimensional space using AR tags. Localization built off of ecdeng's fork of ArUco (https://github.com/ecdeng/aruco). 
 
 Integrated into ROS to publish into system to inversely solve different projections in space for different applications. 
