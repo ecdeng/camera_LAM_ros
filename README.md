@@ -1,4 +1,4 @@
-	# camera_LAM_ros
+# camera_LAM_ros
 Localization of camera in 3D space for more accurate tracking of objects in space. Integrated with ROS and built on @ecdeng branch of openface_ros, OpenFace, and OpenCV 3.
 
 Tranformation of 6-DOF RGB camera position in 3-dimensional space using AR tags. Localization built off of ecdeng's fork of ArUco (https://github.com/ecdeng/aruco). 
